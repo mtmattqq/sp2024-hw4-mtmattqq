@@ -1,2 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/m8H6J7tW)
-Please refer to [2024 NTUSP Programming HW4 - Matrix Multiplication Machine](https://hackmd.io/@kcwayne/sp2024_hw4)
+In this project, I am implementing a multithreaded matrix multiplication machine that accelerates matrix multiplication by fully utilizing CPU cores.
+
+To prevent race conditions, I use `pthread_mutex_t` to lock the critical section. Additionally, I use `pthread_cond_t` to manage the lock, avoiding busy waiting.
+
+Homework Project Spec [2024 NTUSP Programming HW4 - Matrix Multiplication Machine](https://hackmd.io/@kcwayne/sp2024_hw4)
